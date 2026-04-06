@@ -1,0 +1,49 @@
+
+/* Seudo Clases, selector de e, paletas de colores*/
+
+:root{
+    --azul: #1099de;
+    --rojo: #F54927;
+
+
+}
+
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+a {
+    color: inherit; /* Toma el color del texto que lo rodea */
+    text-decoration: none; /* Quita la línea de abajo */
+}
+
+[type="number"]{
+
+color: rgb(189, 10, 133);}
+
+input{
+    color: #1099de;
+}
+
+#boton-principal{
+
+color: yellow;
+border-radius: 1px;
+
+}
+
+/* Regla A */
+.boton-principal {
+    background-color: blue;
+    color: white;
+}
+
+/* Regla B (Aparece después en el archivo) */
+.boton-principal {
+    background-color:var(--rojo);
+}
