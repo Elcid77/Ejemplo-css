@@ -1,0 +1,34 @@
+
+
+
+
+
+.card{
+  box-sizing: border-box;
+    width: 300px;
+    height: auto;
+    padding: 20px; /* La imagen se alejará 20px del borde */
+    border: 3px solid #0d0101;
+    background-color: blueviolet;
+
+}
+
+ .card img {
+    width: 100%;  /* Se acopla al ancho interno de la caja */
+    height: auto; /* Mantiene la proporción original */
+    display: block; 
+}
+
+.card p {
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+.card h3 {
+
+    color: white;
+    text-align: center;
+}
+

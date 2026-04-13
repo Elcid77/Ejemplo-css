@@ -8,15 +8,6 @@
 
 }
 
-
-.lora-<uniquifier> {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
 a {
     color: inherit; /* Toma el color del texto que lo rodea */
     text-decoration: none; /* Quita la línea de abajo */
