@@ -2,9 +2,44 @@
 
 
 
+/* HEADER*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izquierda y enlaces a la derecha */
+    align-items: center;    /* Centra todo verticalmente */
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+}
+
+.nav-links {
+    display: flex;          /* Hace que los <li> se pongan en fila */
+    list-style: none;       /* Quita los puntos de la lista */
+    gap: 20px;              /* Crea espacio entre los enlaces sin usar margin */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;  /* Quita el subrayado */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: blueviolet;      /* Cambia el color al pasar el mouse */
+}
+.contenedor-card {
+    display: grid;
+    /* Corrección aquí: */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Importante para que las tarjetas no se peguen entre sí */
+    justify-items: center; /* Esto centra cada tarjeta horizontalmente dentro de su columna */
+}
 
 .card{
-  box-sizing: border-box;
+    
     width: 300px;
     height: auto;
     padding: 20px; /* La imagen se alejará 20px del borde */
