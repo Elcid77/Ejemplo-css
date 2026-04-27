@@ -1,0 +1,54 @@
+/* 1. MODELO DE CAJA GLOBAL 
+   Asegura que el padding y el borde no sumen ancho extra a tus cajas. 
+   Incluimos before y after para que los "fantasmas" sigan la misma regla. */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. MEJORAS DE RENDERIZADO Y TEXTO
+   Evitamos que el navegador añada espacios extra y suavizamos las fuentes. */
+html {
+  
+    -webkit-text-size-adjust: none; /* Evita cambios de tamaño de texto al rotar el móvil */
+    scroll-behavior: smooth;        /* Desplazamiento suave al hacer clic en anclas */
+}
+
+body {
+    line-height: 1.5;                /* Mejora la legibilidad del texto */
+    -webkit-font-smoothing: antialiased; /* Suaviza las fuentes en Mac/iOS */
+    min-height: 100vh;               /* Asegura que el body ocupe toda la pantalla */
+    text-rendering: optimizeLegibility;
+}
+
+/* 3. MULTIMEDIA FLEXIBLE
+   Evita que las imágenes, videos o SVGs se salgan de sus contenedores. */
+img, picture, video, canvas, svg {
+    display: block;                  /* Elimina el espacio extra debajo de las imágenes */
+    max-width: 100%;                 /* Se adaptan al ancho de su padre */
+    height: auto;                    /* Mantienen su proporción */
+}
+
+/* 4. HERENCIA DE FUENTES EN FORMULARIOS
+   Por defecto, botones e inputs usan fuentes feas del sistema. 
+   Esto les obliga a usar la misma fuente que el resto de tu web. */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 5. LIMPIEZA DE LISTAS Y ENLACES
+   Quitamos los puntos de las listas y el subrayado de los links por defecto. */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto del padre */
+}
+
+/* 6. TABLAS MÁS LIMPIAS */
+table {
+    border-collapse: collapse;
+}

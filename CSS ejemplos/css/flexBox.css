@@ -1,0 +1,96 @@
+/* Contenedor principal del menú */
+.navbar {
+  display: flex;
+  /* justify-content: space-between; Separa el logo de los links */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+/* La lista de enlaces */
+.nav-links {
+  display: flex; /* Convierte la lista en fila */
+  gap: 20px; /* Espacio entre cada enlace */
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-links a {
+  font-size: 1.5rem;
+}
+.nav-links a:hover {
+  color: #ff9900;
+}
+
+/* Contenedor del logo */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 50px; /* Define una altura máxima para el menú */
+}
+
+/* La imagen del logo */
+.logo img {
+  height: 160%; /* Se adapta a la altura del contenedor .logo */
+  width: auto; /* Mantiene la proporción original */
+  display: block;
+}
+
+.padre {
+display: flex;
+/* flex-direction: column;
+flex-wrap:wrap; */
+/* flex-flow: column wrap-reverse; */
+justify-content: center;
+align-items: baseline;
+
+  margin: 10px;
+  width: 1200px;
+  height: 300px;
+  background-color: #767471;
+  border: 2px solid #000000;
+}
+/* Aplicamos estilos a todos los hijos para que sean visibles */
+.hijo1 {
+
+  width: 100px;
+min-height: 30px;  background-color: #ff9900;
+  border: 2px solid #333; /* Sintaxis corregida */
+  color: white;           /* Para que el texto se vea si escribes algo */
+}
+
+.hijo2 {
+  flex-grow: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #0008e6;
+  border: 2px solid #333; /* Sintaxis corregida */
+  color: white;           /* Para que el texto se vea si escribes algo */
+}
+
+.hijo3 {
+  width: 100px;
+  height: 100px;
+  background-color: #e52632;
+  border: 2px solid #333; /* Sintaxis corregida */
+  color: white;           /* Para que el texto se vea si escribes algo */
+}
+
+
+.hijo4 {
+    flex-grow: 0;
+
+  width: 100px;
+  height: 100px;
+  background-color: #0bd83b;
+  border: 2px solid #333; /* Sintaxis corregida */
+  color: white;           /* Para que el texto se vea si escribes algo */
+}
+
+

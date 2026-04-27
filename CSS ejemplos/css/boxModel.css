@@ -1,0 +1,38 @@
+:root {
+    /* Colores base */
+    --bg-color: #1a1a1a;
+    --card-bg: #2a2a2a;
+    --text-color: #e5e5e5;
+    
+    /* Colores de acento */
+    --primary-rock: #8b0000;    /* Rojo oscuro */
+    --secondary-rock: #e2b007;  /* Amarillo mostaza */
+    --accent-gray: #4a4a4a;
+
+}
+
+
+.card{
+    
+    width: 300px;
+    height: auto;
+    padding: 20px; /* La imagen se alejará 20px del borde */
+    border: 3px solid var(--secondary-rock);
+    background-color: var(--bg-color);
+
+}
+
+ .card img {
+    width: 100%;  /* Se acopla al ancho interno de la caja */
+    height: auto; /* Mantiene la proporción original */
+    display: block; 
+}
+
+.card h3, p {
+    padding: 15px;
+    color: var(--text-color);
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
