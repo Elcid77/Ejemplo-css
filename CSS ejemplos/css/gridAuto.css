@@ -1,0 +1,28 @@
+
+
+/* Configuramos el contenedor */
+.contenedor-grid {
+  display: grid;
+  /* Creamos pistas que se adaptan solas: */
+  /* minmax(200px, 1fr) significa: "No midas menos de 200px, pero crece todo lo que puedas" */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Estilo común para todos los cuadrados */
+.cuadrado {
+  /* Aquí aplicamos la proporción */
+  aspect-ratio: 1 / 1; 
+  border-radius: 12px;
+
+}
+
+/* Clases de colores específicos */
+.rojo    { background-color: #e74c3c; }
+.azul    { background-color: #3498db; }
+.verde   { background-color: #2ecc71; }
+.naranja { background-color: #e67e22; }
+.purpura { background-color: #9b59b6; }
+.amarillo { background-color: #f1c40f; }
+

@@ -1,0 +1,25 @@
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header  header  header"
+    "sidebar main    main  "
+    "footer  footer  footer";
+}
+
+/* Cada hijo se asigna a un área con grid-area: */
+.cabecera {
+  grid-area: header;
+  background-color: blue;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: blueviolet;
+}
+.principal {
+  grid-area: main;
+  background-color: brown;
+}
+.pie {
+  grid-area: footer;
+  background-color: aqua;
+}
