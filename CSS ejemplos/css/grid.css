@@ -12,8 +12,11 @@
 
 .contenedor {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+ 
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
   justify-items: center;
+  gap: 25px;
 }
 
 .card {
@@ -37,4 +40,80 @@ p {
   text-align: center;
   font-style: italic;
   font-size: 15px;
+}
+
+/* Media Query para celulares estándar (típicamente menos de 768px) */
+@media (max-width: 600px) {
+  .contenedor {
+    /* Pasamos a una sola columna para que las cards tengan espacio */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .card {
+    /* En celular es mejor que el ancho sea fluido o un poco más grande */
+    width: 90%; 
+    max-width: 280px; /* Evita que crezca demasiado en pantallas medianas */
+    margin: 0 auto;
+  }
+
+  .card h3, p {
+    font-size: 14px; /* Un ajuste ligero para legibilidad */
+  }
+}
+
+/* Media Query para Tablets (iPad, Galaxy Tab, etc.) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .contenedor {
+    /* Mantenemos las 2 columnas pero con un ancho máximo para que no se dispersen */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Un poco más de aire entre elementos */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .card {
+    /* Ajustamos el ancho para que aproveche mejor la pantalla de la tablet */
+    width: 250px; 
+    padding: 25px;
+    border-width: 4px; /* Un borde un poco más grueso para resaltar la estética rock */
+  }
+
+  .card h3, 
+  .card p {
+    font-size: 17px; /* Aumentamos un poco el tamaño para mejorar la lectura */
+  }
+}
+
+/* Media Query para PC / Desktop */
+@media (min-width: 1025px) {
+  .contenedor {
+    /* En PC podemos lucir 3 o 4 columnas dependiendo de cuántas cards tengas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px; /* Centra el contenido para que no se pegue a los bordes */
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 280px; /* Cards más imponentes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones suaves */
+    cursor: pointer;
+  }
+
+  /* Efecto Hover: Estética Rockera */
+  .card:hover {
+    transform: scale(1.05) rotate(-1deg); /* Un pequeño giro "rebelde" */
+    background-color: var(--card-bg);
+    border-color: var(--primary-rock); /* Cambia de amarillo a rojo al pasar el mouse */
+    box-shadow: 12px 12px 0px var(--accent-gray);
+  }
+
+  .card h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
 }

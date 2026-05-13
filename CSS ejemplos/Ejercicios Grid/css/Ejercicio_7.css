@@ -1,0 +1,15 @@
+
+.contenedor{
+    width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(2, 100px);
+    place-content: center;
+}
+
+.caja{
+    background-color: rgb(235, 131, 93);
+    border: 2px solid black;
+}

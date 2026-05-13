@@ -1,0 +1,21 @@
+
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,20px);
+    row-gap: 6px;
+    column-gap: 6px;
+
+}
+
+.caja{
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid yellow;
+
+}
